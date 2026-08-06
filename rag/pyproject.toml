@@ -1,0 +1,17 @@
+[project]
+name = "tcm-rag"
+version = "0.1.0"
+description = "中医古籍 RAG 检索后端:BGE-M3 + Qdrant 混合检索"
+requires-python = ">=3.10"
+dependencies = [
+    "flagembedding>=1.3.0",
+    "qdrant-client>=1.12.0",
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.30.0",
+    "pydantic>=2.7",
+    "modelscope>=1.39",  # 国内模型下载镜像(HuggingFace 不稳定时的备选)
+    # torch 需按本机 CUDA 版本单独安装,见 README
+]
+
+[tool.uv]
+# torch 走 PyTorch 官方索引(按需在 README 说明手动安装)

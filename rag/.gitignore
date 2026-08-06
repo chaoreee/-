@@ -1,0 +1,9 @@
+# 运行时数据(Qdrant 库、切分缓存、日志)
+data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
